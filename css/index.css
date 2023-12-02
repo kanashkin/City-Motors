@@ -114,3 +114,12 @@
     left: 235px;
     top: 400px;
 }
+
+.help__block.call {
+    margin-top: 240px;
+    justify-content: flex-end;
+}
+
+.call-link {
+    margin-right: 294px;
+}
