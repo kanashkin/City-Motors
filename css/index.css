@@ -30,3 +30,27 @@
     font-size: 36px;
     font-weight: 400;
 }
+
+/* MODELS */
+
+.models {
+    margin-top: 271px;
+}
+
+.models__wrapper {
+    margin-top: 121px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.model__item {
+    border-radius: 10px;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-gray {
+    background-color: hsla(0, 0%, 5%, 1);
+}
