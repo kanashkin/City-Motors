@@ -1,3 +1,5 @@
+/* PROMO SECTION */
+
 .promo {
     padding-top: 272px;
     height: 1080px;
@@ -7,4 +9,24 @@
 .promo-title {
     font-weight: 400;
     text-align: center;
+}
+
+/* MARQUEE-CONTACTS */
+
+.marquee-contacts {
+    margin-top: 7px;
+    padding: 40px 0;
+    border: 1px solid #FFF;
+    border-width: 1px 0 1px 0;
+}
+
+.marquee__wrapper {
+    display: flex;
+    gap: 120px;
+}
+
+.marquee-item {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
 }
