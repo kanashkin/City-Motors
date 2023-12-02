@@ -1,0 +1,10 @@
+.promo {
+    padding-top: 272px;
+    height: 1080px;
+    background: url(../img/index/promo/bg.png) center center / cover no-repeat;
+}
+
+.promo-title {
+    font-weight: 400;
+    text-align: center;
+}

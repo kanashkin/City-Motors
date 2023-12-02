@@ -1,0 +1,59 @@
+/* Base styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    width: 100%;
+}
+
+button,
+input,
+textarea,
+select,
+option {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+li {
+    display: inline-flex;
+    list-style: none;
+}
+
+span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Common */
+
+.title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 156%;
+}
