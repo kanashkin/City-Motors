@@ -63,6 +63,21 @@ span {
     text-transform: uppercase;
 }
 
+.title span {
+    color: #E44D0C;
+}
+
+.page-btn {
+    padding: 15px 40px;
+    border-radius: 7px;
+    border: 2px solid #FFF;
+    color: #F3F3F3;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: fit-content;
+}
+
 /* HEADER */
 
 .header {

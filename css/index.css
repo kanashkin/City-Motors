@@ -294,3 +294,30 @@
 .swiper-right {
     display: inline-flex;
 }
+
+/* LOCATION */
+
+.location {
+    margin-top: 350px;
+    padding: 161px 0 250px;
+    background: url(../img/index/location/bg.png) center center / cover no-repeat;
+}
+
+.location__wrapper {
+    max-width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.location__content {
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.location-title {
+    letter-spacing: -0.6px;
+    line-height: 121%;
+}
