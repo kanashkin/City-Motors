@@ -102,6 +102,12 @@ span {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    transition: .3s linear;
+}
+
+.nav__list-item:hover,
+.nav__list-item.active {
+    color: #E44D0C;
 }
 
 .header__block {

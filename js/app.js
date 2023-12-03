@@ -6,3 +6,9 @@ const whySwiper = new Swiper('.why-swiper', {
         nextEl: '.swiper-right',
     }
 })
+
+const autoBuySwiper = new Swiper('.auto-swiper', {
+    spaceBetween: 32,
+    slidesPerView: 4,
+    loop: true
+})
