@@ -123,3 +123,71 @@
 .call-link {
     margin-right: 294px;
 }
+
+/* ADVANTAGES */
+
+.advantages {
+    margin-top: 340px;
+    background: url(../img/index/advantages/bg.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: right -440% bottom;
+}
+
+.advantages__list {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.advantages__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    padding-left: 250px;
+    max-width: 880px;
+}
+
+.advantages__list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 105px;
+    height: 100px;
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantages__list-item:nth-child(1)::before {
+    background-image: url(../img/index/advantages/money.svg);
+}
+
+.advantages__list-item:nth-child(2)::before {
+    background-image: url(../img/index/advantages/delivery.svg);
+}
+
+.advantages__list-item:nth-child(3)::before {
+    background-image: url(../img/index/advantages/check.svg);
+}
+
+.advantages__list-item:nth-child(4)::before {
+    background-image: url(../img/index/advantages/person.svg);
+}
+
+.advantages__list-item-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.advantages__list-item-descr {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 150%;
+    opacity: .7;
+}

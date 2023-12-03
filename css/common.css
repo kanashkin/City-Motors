@@ -60,6 +60,7 @@ span {
     font-size: 64px;
     font-weight: 500;
     line-height: 156%;
+    text-transform: uppercase;
 }
 
 /* HEADER */
