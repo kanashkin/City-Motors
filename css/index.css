@@ -256,6 +256,7 @@
 }
 
 .clients-title {
+    font-family: 'Roboto', sans-serif;
     margin-top: 16px;
     color: #D0D0D0;
     font-size: 20px;
@@ -320,4 +321,54 @@
 .location-title {
     letter-spacing: -0.6px;
     line-height: 121%;
+}
+
+/* CONNECT */
+
+.connect {
+    padding: 340px 0 262px;
+}
+
+.connect__content {
+    max-width: 1160px;
+    width: 100%;
+}
+
+.connect-descr {
+    margin-top: 37px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 152%;
+    max-width: 588px;
+}
+
+.connect__form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.connect__form-input {
+    max-width: 780px;
+    padding: 35px 40px;
+    border-bottom: 1px solid #fff;
+}
+
+.connect__form-input,
+.connect__form-input::placeholder {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.connect__form-warn {
+    color: rgba(255, 255, 255, 0.46);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 164%;
 }
