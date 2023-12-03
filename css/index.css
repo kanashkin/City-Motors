@@ -191,3 +191,27 @@
     line-height: 150%;
     opacity: .7;
 }
+
+/* GEOGRAPHY */
+
+.geography {
+    margin-top: 283px;
+    background-image: url(../img/index/geography/bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 75%;
+    height: 1100px;
+}
+
+.geography-title {
+    margin-top: 150px;
+}
+
+.geography-descr {
+    max-width: 667px;
+    margin-top: 493px;
+    color: #D0D0D0;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 150%;
+}
