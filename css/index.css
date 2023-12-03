@@ -185,11 +185,10 @@
 }
 
 .advantages__list-item-descr {
-    color: #FFF;
+    color: #D0D0D0;
     font-size: 32px;
     font-weight: 300;
     line-height: 150%;
-    opacity: .7;
 }
 
 /* GEOGRAPHY */
@@ -214,4 +213,84 @@
     font-size: 36px;
     font-weight: 300;
     line-height: 150%;
+}
+
+/* WHY */
+
+.why__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.why__content {
+    max-width: 827px;
+}
+
+.why-descr {
+    margin-top: 56px;
+    color: #D0D0D0;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.why-subtitle {
+    margin-top: 64px;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.why__clients {
+    margin-top: 175px;
+}
+
+.clients-amount {
+    color: #E44D0C;
+    font-size: 96px;
+    font-weight: 600;
+}
+
+.clients-title {
+    margin-top: 16px;
+    color: #D0D0D0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.swiper-title {
+    text-align: center;
+    color: #E44D0C;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+    border-bottom: 1px solid #fff;
+}
+
+.why-swiper {
+    margin-top: 16px;
+    max-width: 508px;
+    height: 602px;
+}
+
+.why-swiper .swiper-slide {
+    object-fit: cover;
+}
+
+.swiper-navigation {
+    margin-top: 42px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    align-items: center;
+}
+
+.swiper-left,
+.swiper-right {
+    display: inline-flex;
 }
