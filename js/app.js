@@ -9,9 +9,12 @@ const whySwiper = new Swiper('.why-swiper', {
 
 const autoBuySwiper = new Swiper('.auto-swiper', {
     spaceBetween: 20,
-    slidesPerView: 2,
+    slidesPerView: 1,
     loop: true,
     breakpoints: {
+        500: {
+            slidesPerView: 2
+        },
         768: {
             slidesPerView: 3,
         },
