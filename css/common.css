@@ -138,6 +138,11 @@ span {
     gap: 25px;
 }
 
+.burger-menu,
+.burger {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .socials {
         gap: 15px;
@@ -151,34 +156,6 @@ span {
     }
     .header__block {
         gap: 15px;
-    }
-    .burger {
-        top: 0;
-        right: 20px;
-        cursor: pointer;
-    }
-    .burger-menu {
-        padding: 100px 15px;
-        position: fixed;
-        z-index: 40;
-        right: -100%;
-        top: 0;
-        width: 50%;
-        height: 100%;
-        background-color: #090909;
-        transition: .5s all;
-    }
-    .burger-menu.active {
-        right: 0;
-    }
-    .burger-close {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-    }
-    .nav__list {
-        flex-direction: column;
-        align-items: center;
     }
     .nav__list-item {
         font-size: 12px;
@@ -209,6 +186,36 @@ span {
     .socials-item {
         width: 20px;
         height: 20px;
+    }
+    .burger {
+        display: block;
+        top: 0;
+        right: 20px;
+        cursor: pointer;
+    }
+    .burger-menu {
+        display: block;
+        padding: 100px 15px;
+        position: fixed;
+        z-index: 40;
+        right: -100%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #090909;
+        transition: .5s all;
+    }
+    .burger-menu.active {
+        right: 0;
+    }
+    .burger-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -305,5 +312,49 @@ span {
     }
     .footer-info-item {
         font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer__wrapper {
+        padding: 60px 20px;
+    }
+    .footer-header {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+    .footer__contacts {
+        align-items: flex-start;
+    }
+    .footer-logo__block {
+        gap: 38px;
+        margin-left: 5%;
+    }
+    .footer-logo {
+        width: 58px;
+        height: 58px;
+    }
+    .footer-brand {
+        font-size: 12px;
+    }
+    .footer-phone,
+    .footer-address {
+        font-size: 12px;
+    }
+    .footer__contacts {
+        gap: 15px;
+        margin-top: 35px;
+    }
+    .footer .socials {
+        margin-top: 13px;
+    }
+    .footer-info {
+        border: none;
+        padding: 0;
+        margin-top: 80px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 }

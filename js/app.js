@@ -8,9 +8,17 @@ const whySwiper = new Swiper('.why-swiper', {
 })
 
 const autoBuySwiper = new Swiper('.auto-swiper', {
-    spaceBetween: 32,
-    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerView: 2,
     loop: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    }
 })
 
 const burgerMenu = () => {

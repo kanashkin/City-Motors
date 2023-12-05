@@ -747,15 +747,19 @@
     }
     .location-bg {
         object-fit: cover;
-        max-width: 100%;
+        width: 100%;
         display: block;
         height: 286px;
     }
     .location__content {
-        gap: 25px;
+        gap: 30px;
     }
     .location-title{
         padding: 0 20px;
+    }
+    .location .page-btn {
+        font-size: 13px;
+        padding: 5.5px 36px;
     }
 }
 
@@ -815,5 +819,26 @@
     }
     .connect-descr {
         font-size: 28px;
+    }
+}
+
+@media(max-width: 768px) {
+    .connect-descr {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .connect__form {
+        margin-top: 70px;
+    }
+    .connect__form-input {
+        max-width: 100%;
+        padding: 25px 35px;
+        font-size: 16px;
+    }
+    .connect__form-warn {
+        font-size: 10px;
+    }
+    .connect .page-btn {
+        max-width: 100%;
     }
 }
