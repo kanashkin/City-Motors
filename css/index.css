@@ -4,6 +4,11 @@
     top: 0;
 }
 
+@media(max-width: 768px) {
+    .header {
+        position: static;
+    }    
+}
 
 /* PROMO SECTION */
 
@@ -29,6 +34,13 @@
     .promo-title {
         top: 30%;
         font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-title {
+        top: 44px;
+        font-weight: 400;
     }
 }
 
@@ -59,9 +71,23 @@
     }
     .marquee__wrapper {
         gap: 100px;
-        .marquee-item {
-            font-size: 24px;
-        }
+    }
+    .marquee-item {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .marquee-contacts {
+        margin-top: 0;
+        padding: 12px 0;
+        border: none;
+    }
+    .marquee__wrapper {
+        gap: 40px;
+    }
+    .marquee-item {
+        font-size: 10px;
     }
 }
 
@@ -74,7 +100,12 @@
 .models__wrapper {
     margin-top: 121px;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(2, 50%);
+}
+
+.models__wrapper__block {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }
 
 .model__item {
@@ -101,10 +132,28 @@
     }
     .models__wrapper {
         margin-top: 100px;
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(1, 100%);
     }
     .model__item {
         height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .models {
+        margin-top: 80px;
+    }
+    .models-title {
+        display: none;
+    }
+    .models__wrapper {
+        margin-top: 0;
+    }
+    .model__item {
+        height: 130px;
+    }
+    .model__item img {
+        max-height: 40%;
     }
 }
 
@@ -220,6 +269,37 @@
     }
 }
 
+@media (max-width: 768px) {
+    .help {
+        margin-top: 100px;
+    }
+    .help-title {
+        font-size: 36px;
+    }
+    .help__wrapper {
+        gap: 0;
+    }
+    .help__block:first-child {
+        justify-content: flex-start;
+    }
+    .help__block:nth-child(3) {
+        margin-top: 71px;
+        align-items: center;
+    }
+    .help-bg.bg-1 {
+        top: 60px;
+    }
+    .help-bg.bg-2 {
+        top: 110px;
+    }
+    .help__block.call {
+        margin-top: 50px;
+    }
+    .call-link {
+        max-width: 30%;
+    }
+}
+
 /* ADVANTAGES */
 
 .advantages {
@@ -328,8 +408,34 @@
         max-width: 90%;
         margin-right: -20%;
     }
-} 
+}
 
+@media (max-width: 768px) {
+    .advantages {
+        margin-top: 120px;
+    }
+    .advantages__list {
+        margin-top: 70px;
+    }
+    .advantages__list-item {
+        padding-left: 85px;
+        gap: 10px;
+    }
+    .advantages__list-item::before {
+        width: 35px;
+        height: 50px;
+    }
+    .advantages__list-item-title {
+        font-size: 13px;
+    }
+    .advantages__list-item-descr {
+        font-size: 12px;
+    }
+    .advantages-bg img {
+        max-width: 130%;
+        margin-right: -35%;
+    }
+}
 /* GEOGRAPHY */
 
 .geography {
@@ -381,6 +487,15 @@
     }
     .geography-descr {
         max-width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .geography {
+        margin-top: 132px;
+    }
+    .geography-descr {
+        font-size: 13px;
     }
 }
 
@@ -531,6 +646,50 @@
     }
 }
 
+@media(max-width: 768px) {
+    .why {
+        margin-top: 84px;
+    }
+    .why-descr {
+        margin-top: 31px;
+        font-size: 13px;
+    }
+    .why-subtitle {
+        max-width: 60%;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .why__wrapper {
+        gap: 80px;
+    }
+    .swiper-title {
+        font-size: 16px;
+    }
+    .why-swiper {
+        margin-top: 30px;
+        height: 251px;
+    }
+    .swiper-navigation {
+        margin-top: 27px;
+        gap: 16px;
+    }
+    .swiper-left,
+    .swiper-right {
+        max-width: 46px;
+        max-height: 46px;
+    }
+    .swiper-left img,
+    .swiper-right img {
+        max-width: 100%;
+    }
+    .clients-amount {
+        font-size: 24px;
+    }
+    .clients-title {
+        font-size: 10px;
+    }
+}
+
 /* LOCATION */
 
 .location {
@@ -558,6 +717,10 @@
     line-height: 121%;
 }
 
+.location-bg {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .location {
         margin-top: 200px;
@@ -570,6 +733,29 @@
     }
     .location-title {
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .location {
+        margin-top: 119px;
+        padding: 0;
+        background: none;
+    }
+    .location__wrapper {
+        padding: 0;
+    }
+    .location-bg {
+        object-fit: cover;
+        max-width: 100%;
+        display: block;
+        height: 286px;
+    }
+    .location__content {
+        gap: 25px;
+    }
+    .location-title{
+        padding: 0 20px;
     }
 }
 
