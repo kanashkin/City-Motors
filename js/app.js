@@ -10,5 +10,5 @@ const whySwiper = new Swiper('.why-swiper', {
 const autoBuySwiper = new Swiper('.auto-swiper', {
     spaceBetween: 32,
     slidesPerView: 4,
-    loop: true
+    loop: true,
 })

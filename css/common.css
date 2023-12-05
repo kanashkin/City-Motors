@@ -36,6 +36,10 @@ a {
     display: inline-flex;
 }
 
+a img {
+    max-width: 100%;
+}
+
 li {
     display: inline-flex;
     list-style: none;
@@ -67,6 +71,12 @@ span {
     color: #E44D0C;
 }
 
+@media (max-width: 1200px) {
+    .title {
+        font-size: 42px;
+    }
+}
+
 .page-btn {
     padding: 15px 40px;
     border-radius: 7px;
@@ -81,10 +91,8 @@ span {
 /* HEADER */
 
 .header {
-    position: absolute;
-    top: 42px;
     width: 100%;
-    padding-top: 36px;
+    padding-top: 78px;
 }
 
 .header__wrapper {
@@ -123,11 +131,32 @@ span {
     gap: 25px;
 }
 
+@media (max-width: 1200px) {
+    .socials {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding-top: 40px;
+    }
+    .nav__list-item {
+        font-size: 12px;
+    }
+    .nav__list {
+        gap: 35px;
+    }
+    .logo {
+        max-width: 70%;
+    }
+}
+
 /* FOOTER */
 
 .footer__wrapper {
-    padding: 140px 0 100px;
-    max-width: 1779px;
+    padding: 140px 20px 100px 20px;
+    max-width: 1819px;
     margin: 0 auto;
 }
 
@@ -167,6 +196,7 @@ span {
     color: #FFF;
     font-size: 24px;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .footer-info {
@@ -182,4 +212,38 @@ span {
     color: rgba(255, 255, 255, 0.32);
     font-size: 20px;
     font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .footer-header {
+        gap: 10px;
+    }
+    .footer__wrapper {
+        padding: 100px 20px 80px 20px;
+    }
+    .footer-logo__block {
+        gap: 15px;
+    }
+    .footer-brand {
+        font-size: 14px;
+    }
+    .footer__contacts {
+        margin-right: 0;
+        gap: 20px;
+    }
+    .footer-phone {
+        font-size: 24px;
+    }
+    .footer-address {
+        font-size: 14px;
+    }
+    .footer-info {
+        padding-top: 30px;
+        gap: 10px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    .footer-info-item {
+        font-size: 16px;
+    }
 }
