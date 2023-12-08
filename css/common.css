@@ -219,6 +219,16 @@ span {
     }
 }
 
+@media (max-width: 450px) {
+    .socials-item {
+        width: 13px;
+        height: 13px;
+    }
+    .burger-menu {
+        width: 60%;
+    }
+}
+
 /* FOOTER */
 
 .footer__wrapper {

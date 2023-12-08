@@ -44,6 +44,13 @@
     }
 }
 
+@media (max-width: 450px) {
+    .promo-title {
+        top: 25px;
+        font-weight: 400;
+    }
+}
+
 /* MARQUEE-CONTACTS */
 
 .marquee-contacts {
@@ -154,6 +161,12 @@
     }
     .model__item img {
         max-height: 40%;
+    }
+}
+
+@media (max-width: 450px) {
+    .model__item {
+        height: 90px;
     }
 }
 
@@ -416,6 +429,7 @@
     }
     .advantages__list {
         margin-top: 70px;
+        gap: 40px;
     }
     .advantages__list-item {
         padding-left: 85px;
@@ -558,7 +572,7 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 150%;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .why-swiper {
@@ -826,19 +840,26 @@
     .connect-descr {
         margin-top: 20px;
         font-size: 13px;
+        max-width: 60%;
     }
     .connect__form {
         margin-top: 70px;
     }
-    .connect__form-input {
+    .connect__form-input,
+    .connect__form-input::placeholder {
         max-width: 100%;
-        padding: 25px 35px;
         font-size: 16px;
+    }
+    .connect__form-input {
+        padding: 20px 25px;
     }
     .connect__form-warn {
         font-size: 10px;
+        text-align: center;
     }
     .connect .page-btn {
         max-width: 100%;
+        font-size: 16px;
+        padding: 14px 0;
     }
 }
