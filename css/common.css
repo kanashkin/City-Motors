@@ -71,6 +71,26 @@ span {
     color: #E44D0C;
 }
 
+.title-point {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.title-point::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.title-border {
+    width: fit-content;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    margin-bottom: 100px;
+}
+
 @media (max-width: 1200px) {
     .title {
         font-size: 42px;
@@ -367,4 +387,41 @@ span {
         gap: 15px;
         align-items: flex-start;
     }
+}
+
+/* STAGES LIST */
+
+.stages__list {
+    display: flex;
+    gap: 50px;
+}
+
+.stages__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stages__list-item-number {
+    color: #E44D0C;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.stages__list-item-text {
+    color: #D0D0D0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.transition-line {
+    display: block;
+    margin: 0 auto;
+}
+
+.transition-block {
+    max-width: 55%;
 }
