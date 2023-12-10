@@ -100,6 +100,17 @@ span {
     }
 }
 
+.banner {
+    max-width: 1428px;
+    margin: 44px auto 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
 
 .page-btn {
     padding: 15px 40px;
@@ -525,4 +536,105 @@ span {
     .advantages__list-item-descr {
         font-size: 12px;
     }
+}
+
+/* REVIEWS */
+
+.reviews {
+    margin-top: 100px;
+}
+
+.reviews-title {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+.reviews-title::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: url(../img/reviews/quotes.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.reviews-swiper {
+    margin-top: 34px;
+}
+
+.review__block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.review__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 66%;
+}
+
+.review-text {
+    color: #D0D0D0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.review-name {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-left: 1%;
+}
+
+.review-image {
+    width: 23%;
+    max-height: 380px;
+    border-radius: 12px;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.reviews__navigation {
+    padding-right: 6%;
+    margin-top: 42px;
+    gap: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviews .transition-vertical {
+    margin-top: 37px;
+}
+
+/* CONTACTS */
+
+.contacts {
+    margin-top: 97px;
+    margin-bottom: 242px;
+}
+
+.contacts__list {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contacts__list li {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.contacts-phone {
+    font-size: 36px !important;
 }

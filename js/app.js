@@ -7,6 +7,16 @@ const whySwiper = new Swiper('.why-swiper', {
     }
 })
 
+const reviewsSwiper = new Swiper('.reviews-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    speed: 500,
+    navigation: {
+        prevEl: '.reviews-left',
+        nextEl: '.reviews-right',
+    }
+})
+
 const autoBuySwiper = new Swiper('.auto-swiper', {
     spaceBetween: 20,
     slidesPerView: 1,

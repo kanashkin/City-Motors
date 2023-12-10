@@ -59,17 +59,6 @@
     margin: 66px auto 0 auto;
 }
 
-.tradein-banner {
-    max-width: 1428px;
-    margin: 44px auto 0 auto;
-    color: #FFF;
-    text-align: center;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: uppercase;
-}
-
 .stages .transition-block {
     margin-top: 37px;
 }
