@@ -88,18 +88,6 @@ span {
     border-bottom: 1px solid rgb(36, 36, 36);
 }
 
-@media (max-width: 1200px) {
-    .title {
-        font-size: 42px;
-    }
-}
-
-@media (max-width: 768px) {
-    .title {
-        font-size: 24px;
-    }
-}
-
 .banner {
     max-width: 1428px;
     margin: 44px auto 0 auto;
@@ -111,7 +99,6 @@ span {
     text-transform: uppercase;
 }
 
-
 .page-btn {
     padding: 15px 40px;
     border-radius: 7px;
@@ -121,6 +108,72 @@ span {
     font-weight: 700;
     text-transform: uppercase;
     max-width: fit-content;
+}
+
+.transition-line {
+    display: block;
+    margin: 0 auto;
+}
+
+.transition-block {
+    max-width: 55%;
+}
+
+.transition-vertical {
+    width: 4px;
+    height: 390px;
+    background-color: #fff;
+}
+
+.transition-block,
+.transition-vertical {
+    margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 42px;
+    }
+    .title-point {
+        width: 35px;
+        height: 35px;
+    }
+    .title__block {
+        gap: 50px;
+    }
+    .banner {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+    .title-point {
+        width: 15px;
+        height: 15px;
+    }
+    .title__block {
+        gap: 20px;
+    }
+    .title__block .title {
+        max-width: 80%;
+    }
+    .page-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .banner {
+        font-size: 24px;
+        margin: 32px auto 0 auto;
+    }
+    .transition-vertical {
+        margin-left: 5px;
+        width: 1px;
+        height: 250px;
+        background-color: #fff;
+    }
 }
 
 /* HEADER */
@@ -425,24 +478,28 @@ span {
     line-height: 150%;
 }
 
-.transition-line {
-    display: block;
-    margin: 0 auto;
+@media (max-width: 1200px) {
+    .stages__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.transition-block {
-    max-width: 55%;
-}
-
-.transition-vertical {
-    width: 4px;
-    height: 390px;
-    background-color: #fff;
-}
-
-.transition-block,
-.transition-vertical {
-    margin-left: 20px;
+@media (max-width: 768px) {
+    .stages__list {
+        margin-top: 76px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .stages__list-item {
+        flex-direction: row;
+        gap: 74px;
+        align-items: center;
+    }
+    .stages__list-item-text {
+        font-size: 13px;
+    }
 }
 
 /* ADVANTAGES LIST */
@@ -614,10 +671,73 @@ span {
     margin-top: 37px;
 }
 
+@media (max-width: 1200px) {
+    .review-text {
+        font-size: 18px;
+    }
+    .review-name {
+        font-size: 22px;
+    }
+    .reviews__navigation {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        margin-top: 20px;
+    }
+    .reviews-title {
+        gap: 16px;
+    }
+    .reviews-title::after {
+        width: 59px;
+        height: 59px;
+    }
+    .review__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review__content {
+        max-width: 100%;
+    }
+    .review-text {
+        text-align: center;
+        font-size: 13px;
+    }
+    .review-name {
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+        display: none;
+    }
+    .review-name.mobile {
+        display: block !important;
+    }
+    .review-image {
+        width: 50%;
+        max-height: 30vh;
+    }
+    .reviews__navigation {
+        justify-content: center;
+    }
+    .reviews-left,
+    .reviews-right {
+        width: 46px;
+        height: 46px;
+    }
+    .reviews-left img,
+    .reviews-right img {
+        max-width: 100%;
+    }
+    .reviews__navigation {
+        margin-top: 29px;
+    }
+}
+
 /* CONTACTS */
 
 .contacts {
-    margin-top: 97px;
     margin-bottom: 242px;
 }
 
@@ -637,4 +757,25 @@ span {
 
 .contacts-phone {
     font-size: 36px !important;
+}
+
+@media(max-width: 768px) {
+    .contacts {
+        margin-bottom: 82px;
+    }
+    .contacts__list {
+        margin-top: 52px;
+        gap: 6px;
+    }
+    .contacts-phone {
+        font-size: 16px !important;
+    }
+    .contacts-address {
+        font-size: 10px !important;
+        color: hsla(0, 0%, 100%, .7) !important;
+        font-weight: 300 !important;
+    }
+    .contacts__list .socials {
+        margin-top: 32px;
+    }
 }

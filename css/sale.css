@@ -20,6 +20,57 @@
     object-fit: cover;
 }
 
+.promo-car,
+.under-button {
+    display: none;
+}
+
+@media(max-width: 1200px) {
+    .promo {
+        padding-top: 50px;
+    }
+    .promo__wrapper {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        padding-top: 60px;
+        overflow: hidden;
+        position: relative;
+    }
+    .promo-title {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .promo__wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .promo .page-btn {
+        margin-right: 20px;
+        margin-top: 27px;
+    }
+    .under-button {
+        display: block;
+        margin: 36px 0 0 auto;
+    }
+    .promo-bg {
+        display: none;
+    }
+    .promo-car {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        transform: scale(-1, 1);
+        max-width: 100%;
+        left: -40%;
+    }
+}
+
 /* GRADE */
 
 .grade {
@@ -37,6 +88,31 @@
     display: block;
     max-width: 100%;
     margin: 80px auto 0 auto;
+    margin-left: 20px;
+}
+
+.grade-car-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .grade-car {
+        max-width: 98%;
+    }
+}
+
+@media (max-width: 768px) {
+    .grade {
+        margin-top: 125px;
+    }
+    .grade-car {
+        display: none;
+    }
+    .grade-car-mobile {
+        margin-top: 35px;
+        margin-left: 20px;
+        display: block;
+    }
 }
 
 /* STAGES */
@@ -63,6 +139,31 @@
     margin-top: 37px;
 }
 
+@media (max-width: 768px) {
+    .stages {
+        margin-top: 10px;
+    }
+    .reverse {
+        width: 91.2px;
+        height: 96px;
+        margin: 43px auto 0 auto;
+    }
+    .stages .transition-line {
+        margin-top: 44px;
+        height: 224px;
+        object-fit: contain;
+    }
+    .stages .transition-block {
+        display: none;
+    }
+    .stages .transition-vertical {
+        margin-top: 63px;
+    }
+    .stages-title {
+        margin-left: 20px;
+    }
+}
+
 /* WHY */
 
 .why {
@@ -86,8 +187,32 @@
     margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+    .why {
+        margin-top: 35px;
+    }
+    .advantages__list {
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .advantages__list-item::before {
+        height: 35px;
+    }
+    .advantages__list-item {
+        padding-left: 80px;
+    }
+}
+
 /* CONTACTS */
 
 .contacts {
     margin-top: 97px;
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        margin-top: 20px;
+    }
 }
