@@ -169,7 +169,7 @@ span {
         margin: 32px auto 0 auto;
     }
     .transition-vertical {
-        margin-left: 5px;
+        margin-left: 5px !important;
         width: 1px;
         height: 250px;
         background-color: #fff;
@@ -715,7 +715,7 @@ span {
         display: block !important;
     }
     .review-image {
-        width: 50%;
+        width: 55%;
         max-height: 30vh;
     }
     .reviews__navigation {
@@ -738,6 +738,7 @@ span {
 /* CONTACTS */
 
 .contacts {
+    margin-top: 58px;
     margin-bottom: 242px;
 }
 
@@ -760,6 +761,9 @@ span {
 }
 
 @media(max-width: 768px) {
+    .contacts {
+        margin-top: 20px;
+    }
     .contacts {
         margin-bottom: 82px;
     }

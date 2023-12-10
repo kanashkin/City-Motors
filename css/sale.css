@@ -210,9 +210,3 @@
 .contacts {
     margin-top: 97px;
 }
-
-@media (max-width: 768px) {
-    .contacts {
-        margin-top: 20px;
-    }
-}
