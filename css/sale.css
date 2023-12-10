@@ -36,13 +36,17 @@
 .grade-car {
     display: block;
     max-width: 100%;
-    margin: 80px 0 0 auto;
+    margin: 80px auto 0 auto;
 }
 
 /* STAGES */
 
 .stages {
     margin-top: 60px;
+}
+
+.stages .stages__list {
+    margin-top: 40px;
 }
 
 .stages .page-btn {
@@ -68,4 +72,33 @@
 
 .stages .transition-block {
     margin-top: 37px;
+}
+
+/* WHY */
+
+.why {
+    margin-top: 75px;
+}
+
+.advantages__list {
+    margin-top: 100px;
+    display: grid;
+    gap: 60px;
+    row-gap: 100px;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.advantages__list-item {
+    padding-left: 160px;
+    max-width: 100%;
+}
+
+.why .transition-vertical {
+    margin-top: 40px;
+}
+
+/* CONTACTS */
+
+.contacts {
+    margin-top: 97px;
 }

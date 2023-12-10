@@ -330,56 +330,6 @@
     gap: 70px;
 }
 
-.advantages__list-item {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: relative;
-    padding-left: 250px;
-    max-width: 880px;
-}
-
-.advantages__list-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 105px;
-    height: 100px;
-    background-position: left top;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.advantages__list-item:nth-child(1)::before {
-    background-image: url(../img/index/advantages/money.svg);
-}
-
-.advantages__list-item:nth-child(2)::before {
-    background-image: url(../img/index/advantages/delivery.svg);
-}
-
-.advantages__list-item:nth-child(3)::before {
-    background-image: url(../img/index/advantages/check.svg);
-}
-
-.advantages__list-item:nth-child(4)::before {
-    background-image: url(../img/index/advantages/person.svg);
-}
-
-.advantages__list-item-title {
-    color: #FFF;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 150%;
-}
-
-.advantages__list-item-descr {
-    color: #D0D0D0;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 150%;
-}
-
 .advantages-bg {
     display: none;
 }
@@ -396,21 +346,6 @@
         background: none;
         overflow: hidden;
     }
-    .advantages__list-item {
-        max-width: 100%;
-        padding-left: 120px;
-    }
-    .advantages__list-item::before {
-        width: 60px;
-        height: 60px;
-    }
-    .advantages__list-item-title {
-        font-size: 32px;
-        line-height: 100%;
-    }
-    .advantages__list-item-descr {
-        font-size: 28px;
-    }
     .advantages-bg {
         margin-top: 50px;
         width: 100%;
@@ -426,24 +361,6 @@
 @media (max-width: 768px) {
     .advantages {
         margin-top: 120px;
-    }
-    .advantages__list {
-        margin-top: 70px;
-        gap: 40px;
-    }
-    .advantages__list-item {
-        padding-left: 85px;
-        gap: 10px;
-    }
-    .advantages__list-item::before {
-        width: 35px;
-        height: 50px;
-    }
-    .advantages__list-item-title {
-        font-size: 13px;
-    }
-    .advantages__list-item-descr {
-        font-size: 12px;
     }
     .advantages-bg img {
         max-width: 130%;
