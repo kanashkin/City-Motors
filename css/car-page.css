@@ -1,0 +1,88 @@
+/* CAR */
+
+.car {
+    margin-top: 100px;
+}
+
+.car__header {
+    display: flex;
+}
+
+.car__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-name {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.car-price {
+    margin-top: 16px;
+    color: #E44D0C;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.car__title .page-btn {
+    margin-top: 32px;
+}
+
+.car-swiper {
+    width: 875px !important;
+    height: 583px !important;
+}
+
+.car-photo {
+    margin-top: -150px;
+    object-fit: cover;
+}
+
+.car__navigation {
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    gap: 178px;
+}
+
+.characters__list {
+    margin-top: 97px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    border-top: 1px solid #E44D0C;
+}
+
+.characters__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: fit-content;
+}
+
+.characters__list-item-value {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.characters__list-item-title {
+    color: #B4B4B4;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.car .transition-vertical {
+    margin-top: 52px;
+    height: 252px;
+}
