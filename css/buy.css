@@ -134,8 +134,14 @@
     .marks {
         margin-top: 60px;
     }
+    .headline__list-item {
+        height: 100px;
+    }
     .headline__list-item img {
         max-height: 40%;
+    }
+    .marks__list {
+        align-items: center;
     }
     .marks__list-item {
         font-size: 12px;
