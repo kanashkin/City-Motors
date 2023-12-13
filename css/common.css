@@ -99,6 +99,10 @@ span {
     text-transform: uppercase;
 }
 
+.banner span {
+    color: #E44D0C;
+}
+
 .page-btn {
     padding: 15px 40px;
     border-radius: 7px;
@@ -125,9 +129,19 @@ span {
     background-color: #fff;
 }
 
+.transition-circle {
+    margin-top: 180px;
+    margin-left: 4%;
+    max-width: 50%;
+}
+
 .transition-block,
 .transition-vertical {
     margin-left: 20px;
+}
+
+.transition-circle-mobile {
+    display: none;
 }
 
 @media (max-width: 1200px) {
@@ -143,6 +157,9 @@ span {
     }
     .banner {
         font-size: 32px;
+    }
+    .transition-circle {
+        margin-top: 100px;
     }
 }
 
@@ -171,8 +188,17 @@ span {
     .transition-vertical {
         margin-left: 5px !important;
         width: 1px;
-        height: 250px;
+        height: 180px;
         background-color: #fff;
+    }
+    .transition-circle {
+        display: none;
+    }
+    .transition-circle-mobile {
+        display: block;
+        margin-top: 21px;
+        margin-left: 6.5%;
+        max-width: 50%;
     }
 }
 
@@ -502,9 +528,9 @@ span {
     }
 }
 
-/* ADVANTAGES LIST */
+/* WHY LIST */
 
-.advantages__list-item {
+.why__list-item {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -513,7 +539,7 @@ span {
     max-width: 880px;
 }
 
-.advantages__list-item::before {
+.why__list-item::before {
     content: "";
     position: absolute;
     left: 0;
@@ -524,30 +550,30 @@ span {
     background-repeat: no-repeat;
 }
 
-.advantages__list-item:nth-child(1)::before {
+.why__list-item:nth-child(1)::before {
     background-image: url(../img/index/advantages/money.svg);
 }
 
-.advantages__list-item:nth-child(2)::before {
+.why__list-item:nth-child(2)::before {
     background-image: url(../img/index/advantages/delivery.svg);
 }
 
-.advantages__list-item:nth-child(3)::before {
+.why__list-item:nth-child(3)::before {
     background-image: url(../img/index/advantages/check.svg);
 }
 
-.advantages__list-item:nth-child(4)::before {
+.why__list-item:nth-child(4)::before {
     background-image: url(../img/index/advantages/person.svg);
 }
 
-.advantages__list-item-title {
+.why__list-item-title {
     color: #FFF;
     font-size: 36px;
     font-weight: 700;
     line-height: 150%;
 }
 
-.advantages__list-item-descr {
+.why__list-item-descr {
     color: #D0D0D0;
     font-size: 32px;
     font-weight: 300;
@@ -555,20 +581,100 @@ span {
 }
 
 @media (max-width: 1200px) {
-    .advantages__list-item {
+    .why__list-item {
         max-width: 100%;
         padding-left: 120px;
+    }
+    .why__list-item::before {
+        width: 60px;
+        height: 60px;
+    }
+    .why__list-item-title {
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .why__list-item-descr {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 40px;
+    }
+    .why__list-item {
+        padding-left: 85px;
+        gap: 10px;
+    }
+    .why__list-item::before {
+        width: 35px;
+        height: 50px;
+    }
+    .why__list-item-title {
+        font-size: 13px;
+    }
+    .why__list-item-descr {
+        font-size: 12px;
+    }
+}
+
+/* ADVANTAGES LIST */
+
+.advantages__list {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    row-gap: 80px;
+}
+
+.advantages__list-item {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.advantages__list-item::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantages__list-item:nth-child(1)::before {
+    background-image: url(../img/advantages-list/item-1.svg);
+}
+
+.advantages__list-item:nth-child(2)::before {
+    background-image: url(../img/advantages-list/item-2.svg);
+}
+.advantages__list-item:nth-child(3)::before {
+    background-image: url(../img/advantages-list/item-3.svg);
+}
+.advantages__list-item:nth-child(4)::before {
+    background-image: url(../img/advantages-list/item-4.svg);
+}
+
+@media (max-width: 1200px) {
+    .advantages__list {
+        gap: 20px;
+        row-gap: 40px;
+    }
+    .advantages__list-item {
+        font-size: 24px;
+        gap: 20px;
     }
     .advantages__list-item::before {
         width: 60px;
         height: 60px;
-    }
-    .advantages__list-item-title {
-        font-size: 32px;
-        line-height: 100%;
-    }
-    .advantages__list-item-descr {
-        font-size: 28px;
     }
 }
 
@@ -576,22 +682,28 @@ span {
     .advantages__list {
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
-        gap: 40px;
+        margin-top: 90px;
     }
     .advantages__list-item {
-        padding-left: 85px;
-        gap: 10px;
+        font-size: 13px;
+        gap: 30px;
+        color: hsla(0, 0%, 100%, .7);
     }
     .advantages__list-item::before {
-        width: 35px;
-        height: 50px;
+        width: 44px;
+        height: 44px;
     }
-    .advantages__list-item-title {
-        font-size: 13px;
+    .advantages__list-item:nth-child(1)::before {
+        background-image: url(../img/advantages-list/item-1-mobile.svg);
     }
-    .advantages__list-item-descr {
-        font-size: 12px;
+    .advantages__list-item:nth-child(2)::before {
+        background-image: url(../img/advantages-list/item-2-mobile.svg);
+    }
+    .advantages__list-item:nth-child(3)::before {
+        background-image: url(../img/advantages-list/item-3-mobile.svg);
+    }
+    .advantages__list-item:nth-child(4)::before {
+        background-image: url(../img/advantages-list/item-4-mobile.svg);
     }
 }
 
@@ -671,6 +783,10 @@ span {
     margin-top: 37px;
 }
 
+.review-name.mobile {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .review-text {
         font-size: 18px;
@@ -732,6 +848,12 @@ span {
     }
     .reviews__navigation {
         margin-top: 29px;
+    }
+    .reviews .title__block {
+        align-items: flex-start;
+    }
+    .reviews .title-point {
+        margin-top: 3%;
     }
 }
 
