@@ -140,7 +140,8 @@ span {
     margin-left: 20px;
 }
 
-.transition-circle-mobile {
+.transition-circle-mobile,
+.transition-block-mobile {
     display: none;
 }
 
@@ -198,7 +199,20 @@ span {
         display: block;
         margin-top: 21px;
         margin-left: 6.5%;
-        max-width: 50%;
+        width: 50%;
+    }
+    .transition-block {
+        display: none;
+    }
+    .transition-block-mobile {
+        margin-top: 20px;
+        display: block;
+        margin-left: 5px;
+        width: 55%;
+    }
+    .transition-line {
+        height: 224px;
+        margin-top: 55px;
     }
 }
 
@@ -237,6 +251,7 @@ span {
     flex-direction: column;
     align-items: center;
     gap: 29px;
+    margin-right: 4%;
 }
 
 .socials {
@@ -276,6 +291,9 @@ span {
 }
 
 @media (max-width: 768px) {
+    .header__block {
+        margin-right: 0;
+    }
     .header__wrapper {
         justify-content: center;
         position: relative;
@@ -487,6 +505,7 @@ span {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 25%;
 }
 
 .stages__list-item-number {
@@ -509,6 +528,10 @@ span {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .stages__list-item {
+        width: auto;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -635,18 +658,20 @@ span {
     color: #FFF;
     font-size: 32px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    position: relative;
+    padding-left: 140px;
 }
 
 .advantages__list-item::before {
     content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100px;
     height: 100px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .advantages__list-item:nth-child(1)::before {
@@ -670,11 +695,12 @@ span {
     }
     .advantages__list-item {
         font-size: 24px;
-        gap: 20px;
+        padding-left: 80px;
     }
     .advantages__list-item::before {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
     }
 }
 
@@ -686,8 +712,11 @@ span {
     }
     .advantages__list-item {
         font-size: 13px;
-        gap: 30px;
         color: hsla(0, 0%, 100%, .7);
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
     }
     .advantages__list-item::before {
         width: 44px;

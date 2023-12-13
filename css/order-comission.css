@@ -15,9 +15,18 @@
     margin: 64px auto 0 auto;
 }
 
+.transition-comission {
+    margin-top: 61px;
+    max-width: 100%;
+    margin-left: 2%;
+}
+
 @media (max-width: 768px) {
     .promo .page-btn {
         margin-top: 43px;
+    }
+    .transition-comission {
+        display: none;
     }
 }
 
@@ -33,13 +42,20 @@
     margin-top: 66px;
 }
 
-.stages .transition-line,
-.stages .transition-block {
+.order .stages .transition-line,
+.order .stages .transition-block {
     margin-top: 69px;
 }
 
-.stages .transition-block-mobile {
-    display: none;
+.comission .stages .transition-block {
+    margin-top: 90px;
+}
+
+.comission .stages .stages-title {
+    max-width: 85%;
+    padding: 0;
+    margin: -80px 2% 0 auto;
+    text-align: left;
 }
 
 @media (max-width: 1200px) {
@@ -49,6 +65,10 @@
     }
     .stages .transition-line {
         height: 300px;
+    }
+    .comission .stages .stages-title {
+        max-width: 80%;
+        margin: -50px 2% 0 auto;
     }
 }
 
@@ -62,18 +82,12 @@
     .stages__list {
         margin-top: 42px;
     }
-    .stages .transition-line {
-        height: 224px;
-        margin-top: 55px;
-    }
-    .stages .transition-block {
-        display: none;
-    }
     .stages .transition-block-mobile {
         margin-top: 20px;
-        display: block;
-        margin-left: 5px;
-        width: 55%;
+    }
+    .comission .stages .stages-title {
+        max-width: 70%;
+        margin: -20px 20px 0 auto;
     }
 }
 
@@ -91,6 +105,17 @@
     margin-top: 150px;
 }
 
+.comission .advantages .transition-line {
+    margin-top: 110px;
+}
+.comission .advantages .transition-block {
+    margin-top: 77px;
+}
+
+.advantages .transition-vertical {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .advantages {
         margin-top: 16px;
@@ -101,7 +126,16 @@
     .advantages .title-point {
         margin-top: 4%;
     }
+    .comission .advantages .title-point {
+        margin-top: 2.5%;
+    }
     .advantages .transition-vertical {
         margin-top: 51px;
+    }
+    .comission .advantages .transition-line {
+        margin-top: 44px;
+    }
+    .advantages .transition-vertical {
+        display: block;
     }
 }
