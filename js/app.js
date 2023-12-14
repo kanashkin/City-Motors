@@ -11,6 +11,7 @@ const carSwiper = new Swiper('.car-swiper', {
 const whySwiper = new Swiper('.why-swiper', {
     slidesPerView: 1,
     loop: true,
+    speed: 500,
     navigation: {
         prevEl: '.swiper-left',
         nextEl: '.swiper-right',

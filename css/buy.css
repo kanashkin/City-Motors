@@ -76,6 +76,11 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    transition: .4s all;
+}
+
+.auto__card:hover {
+    opacity: .6;
 }
 
 .auto__card-photo {
@@ -139,9 +144,6 @@
     }
     .headline__list-item img {
         height: 40%;
-    }
-    .marks__list {
-        align-items: center;
     }
     .marks__list-item {
         font-size: 12px;
