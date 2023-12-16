@@ -126,7 +126,7 @@
 .model__item img {
     object-fit: contain;
     max-width: 65%;
-    height: 70%;
+    max-height: 70%;
 }
 
 .model-gray {
@@ -160,7 +160,7 @@
         height: 130px;
     }
     .model__item img {
-        height: 40%;
+        max-height: 40%;
     }
 }
 

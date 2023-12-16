@@ -175,7 +175,7 @@
     display: grid;
     gap: 60px;
     row-gap: 100px;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48%);
 }
 
 .why__list-item {
@@ -185,6 +185,13 @@
 
 .why .transition-vertical {
     margin-top: 40px;
+}
+
+@media (max-width: 1600px) {
+    .why__list {
+        gap: 40px;
+        row-gap: 80px;
+    }
 }
 
 @media (max-width: 1200px) {

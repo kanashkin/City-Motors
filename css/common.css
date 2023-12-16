@@ -604,6 +604,22 @@ span {
     line-height: 150%;
 }
 
+@media (max-width: 1600px) {
+    .why__list-item-title {
+        font-size: 28px;
+    }
+    .why__list-item-descr {
+        font-size: 24px;
+    }
+    .why__list-item::before {
+        width: 80px;
+        height: 80px;
+    }
+    .why__list-item {
+        padding-left: 115px;
+    }
+}
+
 @media (max-width: 1200px) {
     .why__list-item {
         max-width: 100%;
@@ -673,6 +689,7 @@ span {
     height: 100px;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .advantages__list-item:nth-child(1)::before {
@@ -687,6 +704,21 @@ span {
 }
 .advantages__list-item:nth-child(4)::before {
     background-image: url(../img/advantages-list/item-4.svg);
+}
+
+@media (max-width: 1600px) {
+    .advantages__list {
+        gap: 40px;
+        row-gap: 60px;
+    }
+    .advantages__list-item {
+        font-size: 28px;
+        padding-left: 110px;
+    }
+    .advantages__list-item::before {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (max-width: 1200px) {
